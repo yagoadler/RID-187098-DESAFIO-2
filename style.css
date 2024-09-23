@@ -1,0 +1,193 @@
+body {
+    font-family: Montserrat;
+    margin:0;
+}
+.presentation-header{
+    background: #02A28F;
+    box-shadow: 0px 10px 20px 0px #0000001A;
+}
+#header-title{
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+    padding: 1rem 0rem 1rem 9.7rem;
+}
+.section-all{
+    display: grid;
+    grid-template-columns: 70% auto;
+    gap: 1rem;
+    padding: 0px 155px 113px 156px;
+    margin-top: 3rem ;
+}
+/*LADO DIREITO*/
+#img-fundo{
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0px 10px 20px 0px #0000001A;
+}
+.title-banner{
+    border-radius: 8px;
+    background: #02A28F;
+    color: white;
+    box-shadow: 0px 10px 10px 0px #0000001A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title-banner h1{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0rem 0rem 0rem 1rem;  
+}
+.title-banner a{
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0rem 1rem 0rem 0rem;
+    color: white;
+}
+.banner-section{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+.banner{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 1rem;
+}
+.banner-card{
+    box-shadow: 0px 10px 20px 0px #0000001A;
+    border-radius: 10px;
+}
+.text{
+    padding: 0rem 0rem 0rem 1rem;
+}
+.text h2{
+    font-size: 20px;
+    font-weight: 700;  
+}
+.text p{
+    font-size: 14px;
+    font-weight: 400;
+}
+.date{
+    color: #616161;
+}
+.text-banner{
+    color: #02A28F;
+    font-size: 14px;
+    font-weight: 400;
+}
+.banner-image{
+    width: 100%;
+}
+/*LADO ESQUERDO*/
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.title-card{
+    border-radius: 10px;
+    background: #02A28F;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 1rem 0rem 1rem 1rem;
+    margin: 0;
+    box-shadow: 0px 10px 20px 0px #0000001A;
+}
+.card{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0px 10px 20px 0px #0000001A;
+    border-radius: 10px;
+}
+.card-image{
+    width: auto;
+    padding: 1rem 0rem 1rem 1rem;
+}
+.card h3{
+    font-size: 14px;
+    font-weight: 700;
+}
+.card p{
+    font-size: 12px;
+    font-weight: 500;
+    color: #616161;    
+}
+.categories{
+    margin-top: 1.5rem;
+}
+nav ul li{
+    font-size: 16px;
+    font-weight: 600;
+    list-style: none;
+    text-decoration: none;
+    color: #616161;
+}
+footer{
+    text-align: center;
+    background: #02A28F;
+    color: white;
+    padding: 1rem 0rem 1rem 0rem;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* RESPONSIVIDADE */
+@media only screen and (max-width: 1024px) {
+    .section-all {
+        padding: 0rem 5rem 5rem 5rem;
+        grid-template-columns: 1fr;
+    }
+    #header-title {
+        font-size: 1.75rem;
+        padding: 1rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .section-all {
+        padding: 0rem 2.5rem 5rem 2.5rem;
+    }
+    .title-banner {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+    .banner {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #header-title {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+    .section-all {
+        padding: 0rem 1.25rem 3.75rem 1.25rem;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .title-card {
+        font-size: 1.12rem;
+        padding: 1rem;
+    }
+    .title-banner h1 {
+        font-size: 1.12rem;
+    }
+    .title-banner a {
+        font-size: 0.75rem;
+    }
+    .card h3 {
+        font-size: 0.75rem;
+    }
+    .card p {
+        font-size: 0.6rem;
+    }
+}
